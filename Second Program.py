@@ -3,7 +3,7 @@
 def main():
     import pyfiglet
     import time
-    
+
     #Introduction
     the_intro ='Starting...'
     print(pyfiglet.figlet_format(the_intro,font="digital"))
@@ -15,9 +15,11 @@ def main():
     print(pyfiglet.figlet_format(now_begin,font="bubble"))
     time.sleep (2)
     
+    #User Input
     user_input = input (' Type your string >>> ')
     the_output = ''
 
+    #Decryption 
     for i in range (len(user_input)):
 
         if user_input[i] == '*':
@@ -38,12 +40,14 @@ def main():
         else:
             the_output += user_input[i]
 
+    #Displaying Output
     time.sleep(1)
     the_decryption = ' Decrypting the string...'
     print(pyfiglet.figlet_format(the_decryption,font="digital"))
     time.sleep(2)
     print ('The string\'s decryption is >>>',the_output)
     
+    #Try Again?
     time.sleep(2)
     while True:
         print('==========================================================================')
