@@ -3,7 +3,8 @@
 def main():
     import pyfiglet
     import time
-
+    
+    #Introduction
     the_intro ='Starting...'
     print(pyfiglet.figlet_format(the_intro,font="digital"))
     time.sleep(3)
